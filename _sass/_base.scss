@@ -21,6 +21,7 @@ hr.light {
 a {
     @include transition-all;
     color: $theme-primary;
+    text-decoration: underline;
     &:hover,
     &:focus {
         color: darken($theme-primary, 10%);
@@ -44,6 +45,7 @@ p {
 
 .bg-primary {
     background-color: $theme-primary;
+    color: #1A1A1A;
 }
 
 .bg-dark {
@@ -68,22 +70,15 @@ aside {
 }
 
 // Navigation
-
+.site-logo {
+  height: 90px;
+  width: 300px;
+  display: block;
+}
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: transparent;
     @include sans-serif-font;
     @include transition-all;
-    .navbar-header .navbar-brand {
-        color: $theme-primary;
-        @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
-        &:hover,
-        &:focus {
-            color: darken($theme-primary, 10%);
-        }
-    }
     .nav {
         > li {
             > a,
@@ -112,11 +107,6 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
-            &:hover,
-            &:focus {
-                color: white;
-            }
         }
         .nav > li > a,
         .nav > li > a:focus {
@@ -157,16 +147,16 @@ header {
     background-position: center;
     background-image: url('../img/hero.jpg');
     text-align: center;
-    color: white;
+    color: #1A1A1A;
     .header-content {
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
+          font-family: 'Muli', 'Sans-serif';
             h1 {
-                font-weight: 700;
-                text-transform: uppercase;
+                font-weight: 400;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -175,9 +165,12 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
-                font-size: 16px;
+                color: #1a1a1a;
+                font-size: 1.3rem;
                 margin-bottom: 50px;
+            }
+            a {
+              font-size: 1.3rem;
             }
         }
     }
@@ -195,10 +188,13 @@ header {
                 margin-left: auto;
                 margin-right: auto;
                 p {
-                    font-size: 18px;
+                    font-size: 2rem;
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
+                }
+                a {
+                  font-size: 2rem;
                 }
             }
         }
