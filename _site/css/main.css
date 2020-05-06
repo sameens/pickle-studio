@@ -57,9 +57,11 @@ aside {
   padding: 0; }
 
 .site-logo {
-  height: 90px;
-  width: 300px;
-  display: block; }
+  width: 194px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem; }
 
 .navbar-default {
   background-color: transparent;
@@ -161,6 +163,53 @@ header {
             margin-right: auto; }
           header .header-content .header-content-inner a {
             font-size: 2rem; } }
+
+#about {
+  font-family: 'Muli', 'Sans-serif';
+  background-color: #f2f2f2; }
+  #about p {
+    font-size: 2.5rem; }
+
+#design-research {
+  background: url("../img/design_research.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#ui_ux {
+  background: url("../img/ui_ux.jpg");
+  background-size: cover;
+  background-position: center; }
+  #ui_ux .section-card__content {
+    float: right; }
+
+#user-testing {
+  background: url("../img/user-testing.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#product-audit {
+  background: url("../img/audit.jpg");
+  background-size: cover;
+  background-position: center; }
+  #product-audit .section-card__content {
+    float: right; }
+
+.section-card {
+  height: 30rem;
+  margin: 1rem 0; }
+
+.section-card__content {
+  background-color: white;
+  padding: 3rem;
+  margin: 3rem;
+  width: 50%;
+  height: 245px; }
+
+.green-line {
+  border-top: solid 3px green;
+  margin-right: 36rem;
+  margin-top: 2rem;
+  padding: 1rem 0; }
 
 .section-heading {
   margin-top: 0; }
