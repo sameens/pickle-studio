@@ -1,11 +1,12 @@
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    @include serif-font;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
 }
 
 hr {
@@ -73,11 +74,11 @@ aside {
 
 // Navigation
 .site-logo {
-  width: 194px;
+  width: 120px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 2rem 0;
 }
 .navbar-default {
     background-color: transparent;
@@ -158,7 +159,6 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
-          font-family: 'Montserrat', 'Sans-serif';
             h1 {
                 font-weight: 400;
                 margin-top: 0;
@@ -210,52 +210,139 @@ header {
   font-family: 'Montserrat', 'Sans-serif';
   background-color: #f2f2f2;
   p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
-#design-research {
-  background: url('../img/design_research.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#ui_ux {
-  background: url('../img/ui_ux.jpg');
-  background-size: cover;
-  background-position: center;
-  .section-card__content {
-    float: right;
-  }
-}
-#user-testing {
-  background: url('../img/user-testing.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#product-audit {
-  background: url('../img/audit.jpg');
-  background-size: cover;
-  background-position: center;
-  .section-card__content {
-    float: right;
+@media (min-width: 768px) {
+  #about {
+    p {
+      font-size: 2.5rem;
+    }
   }
 }
 .section-card {
-  height: 30rem;
-  margin: 1rem 0;
+  position: relative;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 30px;
+    &:hover {
+      .section-card__img {
+        transform: scale(1.5);
+      }
+  	}
+}
+.section-card__img-wrap {
+  position: relative;
+  height: 0;
+  margin: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+#design-research {
+  .section-card__img {
+    background-image: url('../img/design_research.jpg');
+  }
+}
+#ui_ux {
+  .section-card__img {
+    background-image: url('../img/ui_ux.jpg');
+  }
+}
+#user-testing {
+  .section-card__img {
+    background-image: url('../img/user-testing.jpg');
+  }
+}
+#product-audit {
+  .section-card__img {
+    background-image: url('../img/audit.jpg');
+  }
+}
+.section-card__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 1s cubic-bezier(.2,.3,0,1);
+  -moz-transition: all 1s cubic-bezier(.2,.3,0,1);
+  -ms-transition: all 1s cubic-bezier(.2,.3,0,1);
+  -o-transition: all 1s cubic-bezier(.2,.3,0,1);
+  transition: all 1s cubic-bezier(.2,.3,0,1);
+}
+.section-card__content-wrap {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 0 20px 20px;
+  background: #f4f5f6;
 }
 .section-card__content{
-  background-color: white;
-  padding: 3rem;
-  margin: 3rem;
-  width: 50%;
-  height: 245px;
+  position: relative;
+  margin-top: -20px;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 16px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 6px 16px rgba(0,0,0,.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,.05);
+  -webkit-transition: all .4s cubic-bezier(.2,.3,0,1);
+  -moz-transition: all .4s cubic-bezier(.2,.3,0,1);
+  -ms-transition: all .4s cubic-bezier(.2,.3,0,1);
+  -o-transition: all .4s cubic-bezier(.2,.3,0,1);
+  transition: all .4s cubic-bezier(.2,.3,0,1);
 }
+.ux-workshop {
+  img {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .section-card {
+    margin-top: 60px;
+    background: #f4f5f6;
+  }
+  .section-card__img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .section-card__content-wrap {
+    float: right;
+    padding: 30px 30px 30px 0;
+    width: 50%;
+  }
+  .section-card__content {
+    margin-top: 3px;
+    padding: 30px;
+  }
+  .ux-workshop {
+    img {
+      width: 12rem;
+    }
+  }
+} //end of media
+
 .green-line {
   border-top: solid 3px green;
   margin-right: 36rem;
   margin-top: 2rem;
   padding: 1rem 0;
 }
+
+
+
 .border-green {
   border-top: 1px solid #00AC6F;
   border-bottom: 1px solid #00AC6F;
