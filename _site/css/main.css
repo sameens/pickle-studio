@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; }
 
 p {
   font-size: 16px;
@@ -56,6 +56,12 @@ aside {
 .no-padding {
   padding: 0; }
 
+.ptl {
+  padding-top: 2rem; }
+
+.pbl {
+  padding-bottom: 2rem; }
+
 .site-logo {
   width: 194px;
   display: block;
@@ -65,7 +71,7 @@ aside {
 
 .navbar-default {
   background-color: transparent;
-  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
@@ -128,7 +134,7 @@ header {
     padding: 100px 15px 100px;
     width: 100%; }
     header .header-content .header-content-inner {
-      font-family: 'Muli', 'Sans-serif'; }
+      font-family: 'Montserrat', 'Sans-serif'; }
       header .header-content .header-content-inner h1 {
         font-weight: 400;
         margin-top: 0;
@@ -165,7 +171,7 @@ header {
             font-size: 2rem; } }
 
 #about {
-  font-family: 'Muli', 'Sans-serif';
+  font-family: 'Montserrat', 'Sans-serif';
   background-color: #f2f2f2; }
   #about p {
     font-size: 2.5rem; }
@@ -211,6 +217,10 @@ header {
   margin-top: 2rem;
   padding: 1rem 0; }
 
+.border-green {
+  border-top: 1px solid #00AC6F;
+  border-bottom: 1px solid #00AC6F; }
+
 .section-heading {
   margin-top: 0; }
 
@@ -249,7 +259,7 @@ header {
       transform: translateY(-50%); }
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
         padding: 0 15px; }
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         text-transform: uppercase;
@@ -316,7 +326,7 @@ header {
     background-color: white; }
 
 .btn {
-  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   border: none;
   border-radius: 300px;
   font-weight: 700;
@@ -349,3 +359,10 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #222; }
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  footer img {
+    width: 10rem;
+    margin-bottom: 1rem; }
