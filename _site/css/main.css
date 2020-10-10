@@ -285,8 +285,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-width: 100%;
-  min-height: 100%; }
+  min-width: 100%; }
   .portfolio-header .main-title-wrapper {
     padding-top: 5rem; }
     .portfolio-header .main-title-wrapper h1 {
@@ -302,7 +301,8 @@ header {
         font-size: 6rem;
         line-height: 8rem; } }
   .portfolio-header .skills-wrapper {
-    padding-top: 5rem; }
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
     .portfolio-header .skills-wrapper span {
       font-family: "Encode Sans", sans-serif;
       font-weight: 400;
@@ -342,13 +342,52 @@ header {
         display: block;
         opacity: 0.7; } }
 
+@media (min-width: 992px) {
+  .portfolio-header {
+    min-height: 100%; } }
+.portfolio-works {
+  background-color: #F7F5F5;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+  .portfolio-works h2 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.3rem;
+    opacity: 0.7; }
+  .portfolio-works .list-of-works a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 6rem 3rem;
+    box-shadow: 0px 1px 4px #E0DCDC;
+    height: 36rem;
+    margin-bottom: 2rem; }
+    .portfolio-works .list-of-works a p {
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: #667780; }
+    .portfolio-works .list-of-works a .red-divider {
+      border-top: solid 3px #FF8169;
+      padding: 2rem;
+      width: 6rem;
+      margin-left: auto;
+      margin-right: auto; }
+    .portfolio-works .list-of-works a .works-title {
+      font-size: 3rem;
+      color: #2A3C61;
+      margin: 2rem 0; }
+
 .nav-container {
   box-shadow: 0px 1px 4px #E0DCDC;
   padding-top: 1rem; }
 
 .nav-contact-link {
   float: right;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-right: 1.5rem; }
 
 .mobile-mockup {
   width: 70%;
@@ -364,6 +403,10 @@ header {
       display: inline-block;
       margin-left: 0.7rem;
       margin-right: 0.7rem; } }
+
+video {
+  width: 100%    !important;
+  height: auto   !important; }
 
 .img-wrapper {
   background-color: #f4f4f4;
