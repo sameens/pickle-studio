@@ -24,6 +24,8 @@ title: Works - works
           <span class="s-6">ux design &#183;</span>
         </div>
       </div>
+      <div class="scroll-hint">
+      </div>
     </div>
   </div>
 </div>
@@ -58,3 +60,13 @@ title: Works - works
     </div>
   </div>
 </div>
+
+<script>
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.scroll-hint').fadeOut();
+    } else {
+      $('.scroll-hint').fadeIn();
+    }
+  });
+</script>
